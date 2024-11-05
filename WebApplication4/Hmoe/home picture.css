@@ -1,0 +1,184 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: auto;
+}
+
+.hero {
+    background-image: url('../Hmoe/bg5.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Full height */
+    width:1299px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.info-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .info-section h2 {
+        margin-top: 20px;
+        color: #333;
+    }
+
+    .info-section p {
+        color: #555;
+    }
+
+
+
+    --cards---
+.projects-section {
+    color: black;
+    
+    padding: 40px;
+    text-align: center; /* Center text in the section */
+    
+}
+
+.projects-section h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px; /* Adjust space below the heading */
+    color: #333; /* Optional: Change the color of the heading */
+}
+
+.project-card {
+    position: relative;
+    margin: 20px; /* Space between cards */
+    width: 200px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth scaling */
+    display:flex; /* Flex for inner content */
+    flex-direction: row; /* Stack child elements vertically */
+    justify-content: space-between; /* Space out content */
+    align-items: center; /* Center content horizontally */
+}
+
+    .project-card:hover {
+        transform: scale(1.1); /* Enlarge on hover */
+    }
+
+.project-image {
+    width: 100%;
+    height: 60%; /* Fixed height for images */
+    object-fit:unset; /* Cover the area without distortion */
+}
+
+.project-info {
+    padding: 10px;
+    background-color: #fff;
+    width: 100%; /* Make sure info takes full width */
+}
+
+.project-abstract {
+    display: none; /* Hide abstract by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for text */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex; /* Center text */
+}
+
+.project-card:hover .project-abstract {
+    display: flex; /* Show abstract on hover */
+}
+
+.project-card:hover .project-info {
+    display: none; /* Hide info on hover */
+}
+.project-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome-text h1 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-text h1 {
+        font-size: 1.5rem; /* Even smaller font size for mobile */
+    }
+}
+
+
+--More Information--
+
+.project-abstract {
+    margin-top: 10px; /* Space above the abstract */
+    padding: 10px; /* Padding around the text */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+
+
+
+--skills--
+.skills-section {
+    padding: 40px;
+    text-align: center; /* Center text */
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px 0; /* Space around the section */
+}
+
+.skills-section h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5rem; /* Adjust font size */
+    color: #333; /* Darker text color */
+}
+
+.skill {
+    margin: 15px 0; /* Space between skills */
+}
+
+    .skill span {
+        display: block; /* Block level for skill name */
+        font-weight: bold; /* Bold text */
+        margin-bottom: 5px; /* Space below skill name */
+    }
+
+.progress {
+    background-color: #e0e0e0; /* Light gray background for the progress bar */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Clip child elements */
+    height: 25px; /* Height of the progress bar */
+    width: 100%; /* Full width */
+}
+
+.progress-bar {
+    background-color: #4caf50; /* Green color for the progress */
+    height: 100%; /* Full height */
+    transition: width 0.5s ease; /* Smooth transition for width change */
+}

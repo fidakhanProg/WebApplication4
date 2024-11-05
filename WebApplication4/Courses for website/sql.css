@@ -1,0 +1,104 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#navbar {
+    background-image:url(../Hmoe/bg2.jpg);
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    width:2000px;
+}
+
+    #navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        #navbar ul li {
+            float: left;
+        }
+
+            #navbar ul li a {
+                display: block;
+                padding: 14px 20px;
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                transition: background-color 0.3s;
+            }
+
+                #navbar ul li a:hover {
+                    background-color: #555;
+                }
+
+#container {
+    display: flex; /* Use flexbox for layout */
+    background-color: #f8f8f8; /* Light background for contrast */
+    margin: 20px; /* Add some margin */
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This allows items to wrap onto the next line */
+}
+
+#sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #333; /* Dark background for sidebar */
+    color: white; /* White text for readability */
+    padding: 15px; /* Padding for some space inside */
+    overflow-y: auto; /* Enable scrolling if content is too long */
+}
+
+    #sidebar ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+    }
+
+    #sidebar li a {
+        color: white; /* Link color */
+        text-decoration: none; /* Remove underline */
+        display: block; /* Block display for easier clicking */
+        padding: 10px; /* Padding for links */
+    }
+
+        #sidebar li a:hover {
+            background-color: #575757; /* Hover effect */
+        }
+
+#content {
+    flex-grow: 1; /* Allow content to take remaining space */
+    padding: 15px; /* Padding inside content area */
+    background-color: white; /* White background for content */
+    border-left: 1px solid #ccc; /* Separation line */
+}
+
+h3, p {
+    margin: 0 0 15px; /* Space out paragraphs and headings */
+}
+#content {
+    flex-grow: 1; /* Allow content to take remaining space */
+    padding: 3px; /* Padding inside content area */
+    background-color: white; /* White background for content */
+    border-left: 1px solid #ccc; /* Separation line */
+    overflow-y:auto; /* Enable scrolling if content is too long */
+}
+
+#dynamicContent {
+    background-color: #f8f8f8; /* Light gray background for the content */
+    padding: 15px; /* Padding around the content */
+    border-radius: 5px; /* Slight rounding of corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Margin above to separate from other content */
+}
+
+h4 {
+    margin-top: 20px; /* Space above headings */
+}
+
+p, ul {
+    margin: 10px 0; /* Space above and below paragraphs and lists */
+}

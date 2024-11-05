@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="WebApplication4.Hmoe.home" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    
+    <title>The FK Spot</title>
+    <link href="home.css" rel="stylesheet" />
+   
+      <link href="Meuess.css" rel="stylesheet" />
+    <style>
+
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="headerDiv">
+            <div id="Header">
+                <div id="RightHeader">
+                    <div id="LoginDiv">
+                        <asp:Label ID="loginName" CssClass="LoginName" runat="server"></asp:Label>
+                    </div>
+                    <div class="container">
+                      <nav>
+                            <ul>
+                                <li><a href="hom1.aspx">Home</a></li>
+                              <!--  <li><a href="../Authenication/Registration.aspx">Registration/Login</a></li>-->
+                                
+                                <li><a href="#projects-section" id="projects-link">Projects</a></li>
+
+                               <li><a href="#contact-section">Contact</a></li>
+
+                               
+                                <li><a href="#skills" id="skills-link">Skills</a></li>
+                            <li><a href="../Authenication/Logout.aspx">Log Out </a></li>
+                                </ul>
+                        </nav>
+                    </div> </div> 
+                 
+                  
+                </div>
+                  
+                <span class="Productname">Fida Khan</span><br />
+                <span class="ProductSlogan">Software Engineer</span>
+
+            </div></div>
+        
+        <div id="Content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="FooterDiv">
+            Copyright &copy; 2024 Developed & Designed by <a href="http://www.msclpk.com/" style="color:#FFDD00" target="_blank">Engr Fida Khan Bettani</a>
+            <div id="divScreenCode">
+                <asp:Label ID="lblScreenCode" runat="server" Text="Testing"></asp:Label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

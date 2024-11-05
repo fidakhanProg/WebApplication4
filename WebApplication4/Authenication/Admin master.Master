@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin master.master.cs" Inherits="WebApplication4.Authenication.Admin_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../Hmoe/home.css" rel="stylesheet" />
+    <link href="Meuess.css" rel="stylesheet" />
+    <script src="JavaScript.js"  type="text/javascript"></script>
+   
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="headerDiv">
+        <div id="Header">
+            <div id="RightHeader">
+                <div id="LoginDiv">
+                    <asp:Label ID="loginName" CssClass="LoginName" runat="server"></asp:Label>
+                </div>
+                <br />
+                <asp:HyperLink ID="homeHyperLink" NavigateUrl="~/Hmoe/hom1.aspx" Text="Home" runat="server"></asp:HyperLink>
+                <asp:LinkButton ID="lnkLogOut" runat="server" PostBackUrl="~/Authenication/Logout.aspx">Log Out</asp:LinkButton>
+                <asp:HyperLink ID="ChangePwdHLink" runat="server" Text="Change Password" NavigateUrl="~/Authentication/ChangePassword.aspx"></asp:HyperLink>
+            </div>
+            <span class="Productname">Fida Khan</span><br />
+            <span class="ProductSlogan">Dot net & Data Anylist</span>
+        </div>
+    </div>
+    <div id="menuDiv">
+        <ul id="nav">
+            <li class="top"><a href="#nogo22" id="services" class="top_link"><span class="down">
+                Register/Login</span></a>
+                <ul class="sub">
+                    <li><a href="../CMSADMIN/User_Registration.aspx">User Registration</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+
+                    
+                </ul>
+            </li>
+            
+         
+            
+    </div>
+    <div id="Content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+        </form>
+
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+             <div id="FooterDiv">
+        Copyright &copy; 2024 Developed & Designed by <a href="http://www.msclpk.com/"
+            target="_blank">Fida Khan</a>
+        <div id="divScreenCode">
+            <asp:Label ID="lblScreenCode" runat="server" Text="Testing"></asp:Label>
+        </div> </div>
+        </asp:ContentPlaceHolder>
+    
+   </body>
+    
+</html>

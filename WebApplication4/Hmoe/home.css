@@ -1,0 +1,218 @@
+﻿body {
+   margin:0;
+   padding:0;
+   height:100%;
+  font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#headerDiv {
+    /*background:#A40F01;*/
+    background-image: url(../Hmoe/bg.jpg);
+    height: 85px;
+
+   
+}
+
+
+#BottomGap
+{
+	height: 10px;
+}
+#ModuleHeading
+{
+	font-size: 24px;
+	color: #006600;
+	position:absolute;
+     z-index:-1;
+     top:40%;
+     left:35%;
+     margin:-150px 0 0 -150px;
+}
+
+#ContentDiv
+{
+	margin: 0 auto;
+	padding-bottom:30px; /* Height of the footer */
+}
+
+#divScreenCode
+{
+	float: right;
+	font-weight: bold;
+	margin-right: 8px;
+	font-size: 20px;
+}
+
+#FooterDiv
+{
+	/*background:#A40F01;*/
+     background-image:url(../Hmoe/bg2.jpg);
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:25px;   /* Height of the footer */
+	text-align:center;
+	font-size:11px;
+	color:White;
+}
+
+#Header
+{
+	font-family: arial;
+	padding-top: 1px;
+	padding-left: 25px;
+}
+
+.Productname
+{
+	font-size: 24px;
+	color: #FFDD00;
+}
+
+.ProductSlogan
+{
+    font-size: 14px;
+	color: white;
+}
+
+#Content
+{
+	padding-left: 0px;
+	/*padding-top: 0  px;*/
+	float: left;
+}
+
+#Left
+{
+	padding-top: 5px;
+	float: left;
+	width: 180px;
+}
+
+#LeftMenu
+{
+	border: 2px solid #d0d1d0;
+	background: #FFDD00;
+	font-size: 12px;
+	font-family: arial;
+	padding-bottom: 8px;
+}
+
+#LeftMenu a
+{
+	color: #FFDD00;
+	text-decoration: none;
+	display: block;
+	padding-left: 9px;
+}
+
+#LeftMenu a.Links
+{
+	margin-top: 8px;
+	text-decoration: underline;
+}
+
+#LeftMenu a:hover
+{
+text-decoration: underline;
+}
+
+#RightHeader
+{
+	float: right;
+	padding-right: 8px;
+	font-size: 12px;
+
+}
+#RightHeader a
+{
+	padding-left: 14px;
+	padding-right: 2px;
+	color: #FFDD00;
+	text-decoration: none;
+}
+
+#RightHeader a:hover
+{
+	text-decoration: underline;
+	color: white;
+}
+
+.LoginName
+{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #FFDD00;
+	text-align: right;
+}
+
+#LoginDiv
+{
+	margin-right: 8px;
+	text-align:right
+}
+
+#CenterMenuDiv
+{
+	position:absolute;
+	width : 500px;
+     z-index:-1;
+     top:50%;
+     left:17%;
+     margin:-150px 0 0 -150px;
+}
+#ContentDiv1
+{
+	position:absolute;
+	width : 500px;
+     z-index:-1;
+     top:100%;
+     left:35%;
+     margin:-150px 0 0 -150px;
+}
+
+#Failure
+{
+    color:Red;
+}
+
+
+/* Navigation Bar Styles */
+nav {
+    border-radius: 2px; /* Rounded corners */
+    
+}
+
+    nav ul {
+        list-style: none; /* Remove bullet points */
+        padding: 0;
+        margin: 0;
+        display: flex; /* Horizontal layout */
+        /* Center items */
+        justify-content: right;
+        font-size: 17px;
+    }
+
+        nav ul li {
+            margin: 10px 15px; /* Space between items */
+        }
+
+            nav ul li a {
+                color: #fff; /* White text color */
+                text-decoration: none; /* Remove underline */
+                padding: 10px 15px; /* Padding for links */
+                transition: background-color 0.3s, color 0.3s; /* Transition effects */
+                border-radius: 3px; /* Rounded corners for links */
+            }
+
+                nav ul li a:hover {
+                    background-color: black; /* Yellow background on hover */
+                    color: white; /* Dark text color on hover */
+                    text-decoration: none;
+                    padding: 10px 15px;
+                }
+
+
+/* Header and Footer Styles */
+
+
